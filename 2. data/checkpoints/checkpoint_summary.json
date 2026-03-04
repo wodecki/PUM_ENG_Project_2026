@@ -1,0 +1,65 @@
+{
+  "checkpoint_for_mp2": {
+    "format": "csv",
+    "rows": 5000,
+    "cols": 21,
+    "description": "Raw customers.csv \u2014 start MP2 without completing MP1",
+    "md5": "c016cd4bfc36ac8d0a99bb6a3d55fa44"
+  },
+  "checkpoint_for_mp3": {
+    "format": "csv + pkl",
+    "rows": 4978,
+    "cols": 40,
+    "train_rows": 3982,
+    "test_rows": 996,
+    "features": 38,
+    "target_rate": 0.196,
+    "description": "Clean, encoded, scaled data from MP2 \u2014 start MP3 without completing MP1-MP2",
+    "md5_csv": "948a93c56fbd1ef8244032ff7e3d02a7",
+    "md5_pkl": "51fbc336d2193903c0891239e063f4f8"
+  },
+  "checkpoint_for_mp4": {
+    "format": "pkl",
+    "contents": [
+      "X_train",
+      "X_test",
+      "y_train",
+      "y_test",
+      "feature_names",
+      "gender_test",
+      "lr_model",
+      "rf_model",
+      "y_pred_lr",
+      "y_prob_lr",
+      "y_pred_rf",
+      "y_prob_rf"
+    ],
+    "lr_roc_auc": 0.8352,
+    "rf_roc_auc": 0.8457,
+    "description": "Trained LogReg + RF models from MP3 \u2014 start MP4 without completing MP1-MP3",
+    "md5": "c1f08daf96cb759e40a8cd48e6e818ec"
+  },
+  "checkpoint_for_mp5": {
+    "format": "pkl",
+    "contents": [
+      "X_train",
+      "X_test",
+      "y_train",
+      "y_test",
+      "feature_names",
+      "gender_test",
+      "lr_model",
+      "rf_model",
+      "y_prob_lr",
+      "y_prob_rf",
+      "CAMPAIGN_COST",
+      "EXPECTED_REVENUE",
+      "optimal_threshold_rf",
+      "optimal_profit_rf"
+    ],
+    "campaign_cost": 80,
+    "expected_revenue": 140.0,
+    "description": "Evaluated model artifacts from MP4 \u2014 start MP5 without completing MP1-MP4",
+    "md5": "bcf2fddef75d5d4552bc0ce0535ed17f"
+  }
+}
