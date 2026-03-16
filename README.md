@@ -1,4 +1,4 @@
-# PUM: Designing Services Using AI Methods
+# PUM: Machine Learning Foundations
 
 ## What Is This?
 
